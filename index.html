@@ -184,14 +184,15 @@ font-color:#ffffff;
 position:relevant;
 }
 
-.cube{
+.drake{
   left:320px;
         top:700px;
+       border-style:solid;
+       border-color:rgb(255,255,255);
         position: absolute;
 	width:300px;
 	height:500px;
         transform-style:preserve-3d;
-        transform: rotate(50deg) rotateY(-100deg) rotateX(70deg) rotateZ(-1015deg);
        animation:money 10s infinite ;
        -webkit-animation: money 10s infinite;/* Safari 4.0 - 8.0 */
 }
@@ -200,15 +201,15 @@ position:relevant;
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes money{
- 0% { transform:rotateY(70deg);}
-100% { transform:rotateY(-30deg);}
+ 0% { transform:rotateY(0deg);}
+100% { transform:rotateY(360deg);}
 
   
 }
 		  
 @keyframes  money{
- 0% { transform:rotateY(70deg);}
-100% { transform:rotateY(-30deg);}
+ 0% { transform:rotateY(0deg);}
+100% { transform:rotateY(360deg);}
 
 }  
 
@@ -398,21 +399,8 @@ body{
 <body>
 
 	
-<div class="cube">
-   <div class="side left">   
-     <img src="https://raw.githubusercontent.com/diamondrolls/images/main/0A12C7BF-DB7D-4ED5-B973-6EAEC6873CB5.jpeg" height="100%" width="100%"> </div>
-   
-      <div class="side frontpage1"> <h1 class="neon" data-text=" Diamondrolls LLC"> Diamondrolls LLC </h1> </div>                                  
-  <div class="side frontpage2">  </div>                          
-   <div class="side frontpage3">  </div>                             
-  <div class="side frontpage4">  </div>
-  <div class="side frontpage5">  </div>
-  <div class="side frontpage6"> <h1 class="neon" data-text="Miracle be mine" > Miracle be mine </h1> </div>
-  <div class="side right">
-     <img src="https://raw.githubusercontent.com/diamondrolls/images/main/0A12C7BF-DB7D-4ED5-B973-6EAEC6873CB5.jpeg" height="100%" width="100%"> </div>
-   <div class="sides front">   </div>
-      
-</div>
+<div class="drake"></div>
+  
  <script>
 </script>
           </body>
