@@ -533,7 +533,10 @@ position:relative;
 	background-color:rgba(0, 255 ,255, .5);
 	background-size:400px 400px;
 	 z-index:55;
-     align:center;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 		   }
 
 
@@ -560,6 +563,43 @@ position:relative;
  </div>	
 	  	<div class="homepage"> 
 			<h1>ORDER NOW</h1>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="P4Y595PKJUB4G" />
+  <table>
+    <tr>
+      <td>
+        <input type="hidden" name="on0" value="Types"/>
+        Types
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select name="os0">
+          <option value="Assorted">
+            Assorted
+          </option>
+          <option value="Non Assorted">
+            Non Assorted
+          </option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="hidden" name="on1" value="are you allergic to anything?"/>
+        are you allergic to anything?
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="os1" maxLength="200" />
+      </td>
+    </tr>
+  </table>
+  <input type="hidden" name="currency_code" value="USD" />
+  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Subscribe" />
+</form>
 		</div>
 	  <script>
  function akon() {
